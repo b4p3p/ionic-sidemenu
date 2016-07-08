@@ -1,0 +1,41 @@
+<ion-view>
+
+  <ion-content class="padding has-header has-footer">
+
+    <div class="item item-avatar">
+      <img src="{{item.picture.thumbnail}} " />
+      <h2>{{item.name.first}} {{item.name.last}}</h2>
+      <p>{{item.location.city}} {{item.password}}</p>
+    </div>
+    <div class="item item-icon-left">
+      <i class="icon ion-email"></i>
+      {{item.email}}
+    </div>
+    <div class="item item-icon-left">
+      <i class="icon ion-ios-telephone"></i>
+      {{item.phone}}
+    </div>
+
+    <div class="row">
+      <div class="col col-center"
+           style="text-align: center">
+        <button ng-click="goHome()" class="button button-positive">
+          Chiudi
+        </button>
+      </div>
+    </div>
+
+  </ion-content>
+
+  <ion-footer-bar align-title="center">
+    <div class="buttons" ng-click="doSomething()">
+      <a class="button button-icon icon">
+        <img class="button-icon" src="img/ic_agree.png" style="height: 30px">
+      </a>
+    </div>
+    <h1 class="title">{{item.name.first}} {{item.name.last}}</h1>
+  </ion-footer-bar>
+
+</ion-view>
+
+
